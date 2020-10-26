@@ -44,8 +44,11 @@ func (c *Controller) Login(w http.ResponseWriter, r *http.Request) {
 		}
 
 		http.SetCookie(w,hc)
-		cookie, _ := r.Cookie(userName)
-		fmt.Println(cookie.Name," << cookie >> ",cookie.Value)
+		//cookie, _ := r.Cookie(userName)
+		//
+		//time.Sleep(2*time.Second)
+		//
+		//fmt.Println(cookie.Name," << cookie >> ",cookie.Value)
 		fmt.Println("User successfully signed up ",userName)
 		http.Redirect(w,r,"/story?user_name="+userName,http.StatusFound)
 	}else{
