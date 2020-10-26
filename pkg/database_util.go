@@ -14,9 +14,15 @@ const (
 )
 
 func NewDbClient() *sql.DB {
-		psqlInfo := fmt.Sprintf("host=%s port=%d user=%s "+
-			"password=%s dbname=%s sslmode=disable",
-			host, port, user, password, dbname)
+	//	psqlInfo := os.Getenv("DATABASE_URL")
+		psqlInfo := "postgres://eavynrcvnxdwgc:281dd9abdb6ae0c94c19318602ab5ce92c54746090d106b2454a39517f2a6803@ec2-54-90-68-208.compute-1.amazonaws.com:5432/d3gfdm88ij20dj"
+
+		if len(psqlInfo)==0{
+			psqlInfo=fmt.Sprintf("host=%s port=%d user=%s "+
+				"password=%s dbname=%s sslmode=disable",
+				host, port, user, password, dbname)
+		}
+
 		db, err := sql.Open("postgres", psqlInfo)
 		if err != nil {
 			panic(err)
