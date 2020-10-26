@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Story</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="text-align: center">
+   <h1>Welcome to story page</h1>
+
+   <div class="container">
+     {{range .Story}}
+        <div id="card" class="col-md-4">
+              <h2>{{.StoryTitle}}</h2>
+             <a href="/content?user_name={{.Username}}&story_title={{.StoryTitle}}"> <img src="{{.ImageLink}}" style="height: 50%;width: 100%"></a>
+        </div>
+     {{end}}
+   </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+# github.com/google/uuid v1.1.2
+github.com/google/uuid
+# github.com/googollee/go-engine.io v1.0.1
+github.com/googollee/go-engine.io
+github.com/googollee/go-engine.io/message
+github.com/googollee/go-engine.io/parser
+github.com/googollee/go-engine.io/polling
+github.com/googollee/go-engine.io/transport
+github.com/googollee/go-engine.io/websocket
+# github.com/googollee/go-socket.io v1.0.1
+github.com/googollee/go-socket.io
+# github.com/gorilla/mux v1.8.0
+github.com/gorilla/mux
+# github.com/gorilla/websocket v1.4.0
+github.com/gorilla/websocket
+# github.com/lib/pq v1.8.0
+github.com/lib/pq
+github.com/lib/pq/oid
+github.com/lib/pq/scram
