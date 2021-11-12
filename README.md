@@ -1,5 +1,5 @@
 # Story_read_counter
-Counts story view .
+Full stack web application which shows concurrent live view and total views on photos of this website.
 
 To deploy locally :- 
 1. CREATE postgres DATABASE story.
